@@ -21,7 +21,8 @@ input[type="text"] {
     font-size: 1.2em;
     padding: 20px;
     display: none;
-    color: #555;
+    color: #ffffff;
+    background: gray;
 }
 
 main {
