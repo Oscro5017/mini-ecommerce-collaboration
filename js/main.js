@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
-                <p>ราคา: ${product.price} บาท</p>
+                <p>ราคา: ${product.price.toLocaleString()} บาท</p>
             `;
             productList.appendChild(card);
         });

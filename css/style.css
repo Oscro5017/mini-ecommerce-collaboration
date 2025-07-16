@@ -39,6 +39,12 @@ main {
     width: 200px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .product-card img {
@@ -52,4 +58,11 @@ main {
 
 .product-card p {
     color: #888;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
