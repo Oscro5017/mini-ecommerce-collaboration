@@ -1,15 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productList = document.getElementById('product-list');
     const searchInput = document.getElementById('searchInput');
+    const loader = document.getElementById('loader');
     let allProducts = [];
 
+    loader.style.display = 'block'
     // Fetch products from JSON
     fetch('js/products.json')
         .then(response => response.json())
+        
         .then(data => {
             allProducts = data;
             displayProducts(allProducts);
-        });
+        })
+        .finally(() =>{
+            loader.style.display = 'none'
+        })
 
     function displayProducts(products) {
         productList.innerHTML = ''; // Clear previous list
