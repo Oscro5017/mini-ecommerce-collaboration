@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchInput.addEventListener('keyup', () => {
         const searchTerm = searchInput.value.trim().toLowerCase();
 
-        if (searchTerm === '4948') {
+        if (searchTerm === '') {
             const filteredProducts = allProducts.filter(product => {
                 return product.name.toLowerCase().includes(searchTerm);
             });
